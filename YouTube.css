@@ -1,1 +1,449 @@
+/*  General.css */
+p {
+    font-family: Roboto,Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.body {
+    font-family: Roboto, Arial;
+    margin: 0;
+    margin-top: 100px;
+    /* color: rgb(189, 51, 51); */
+    
+}
+
+/* header.css  */
+.header{
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 80px; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(178, 173, 173);
+
+    /* z-index: 200px; */
+}
+.start{
+    height: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    flex-shrink: 0;
+    
+}
+.hamburger-menu {
+    width: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-logo{
+    width: 90px;
+}
+.center{
+    /* background-color: lightpink; */
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 470px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.Search-You {
+    margin-top: 0px;
+    /* width: 342px; */
+    flex: 1;
+    height: 35px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 0;
+}
+.Search-logo{
+    width: 52px;
+    height: 37px;
+    
+}
+.Search-logo-box{
+    margin-left: -1px;
+    background-color: white;
+    border-color: rgb(139, 135, 135);
+    border-style: solid;
+    border-width: 1px;
+
+    position: relative;
+   
+   
+}
+.Search-logo-box .Search-tooltip{
+    position: absolute;
+    background-color:rgb(115, 115, 115);
+    padding: 3px;
+    border-radius: 2px;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    bottom: -40px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    
+
+}
+.Search-logo-box:hover .Search-tooltip{
+    opacity: 1;
+}
+.voice-search{
+    width: 32px;
+    height: 32px;
+    /* margin-top: 5px;
+    margin-right: 6px; 
+    margin-bottom: 0px;
+    margin-left: 6px; */
+    margin: 5px 6px 0px 6px;
+    background-color: rgb(245, 240, 240);
+    border-radius: 50%;
+}
+.voice-search-icon{
+    position: relative;
+
+}
+.voice-search-icon .voice-tooltip{
+    position: absolute;
+    font-size:12px;
+    width: 150px;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-family: Roboto,Arial;
+    bottom:-40px;
+    margin-left: -45px;
+    border-radius: 2px;
+
+    opacity: 0;
+    pointer-events: none;
+    
+    
+}
+.voice-search-icon:hover .voice-tooltip{
+    opacity: 1;
+
+} 
+.end{
+    /* background-color: rgb(60, 155, 150); */
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+    
+}
+.upload{
+    width: 24px;
+    height: 24px;
+}
+.upload-icon .Create-tooltip{
+    position: absolute;
+    font-size:12px;
+    width: 50px;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-family: Roboto,Arial;
+    bottom:-35px;
+    margin-left: -10px;
+    border-radius: 2px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+.upload-icon:hover .Create-tooltip{
+    opacity: 1;
+}
+.youtube-apps{
+    width: 24px;
+    height: 24px;
+}
+.YouTube-apps .YouTube-apps-tooltip{
+    position: absolute;
+    font-size:12px;
+    width: 80px;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-family: Roboto,Arial;
+    bottom:-35px;
+    margin-left: -20px;
+    border-radius: 2px;
+
+    opacity: 0;
+    pointer-events: none;
+
+}
+.YouTube-apps:hover .YouTube-apps-tooltip{
+    opacity: 1;
+}
+.notifications{
+    width: 24px;
+    height: 24px;
+}
+.my-channel{
+    width: 32px;
+    height: 32px;
+    
+}
+
+.notifications-Content{
+    position: relative;
+}
+.notifications-numbers{
+    position: absolute;
+    font-family: Roboto, Arial;
+    font-weight: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    padding: 1px;
+    /* padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px; */
+    padding-bottom: 2px; 
+    border-radius: 100%;
+    text-align: center;
+    right: -6px;
+    top: -3px;
+}
+.notifications-Content .notifications-tooltip{
+
+    position: absolute;
+    font-size:12px;
+    width: 80px;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-family: Roboto,Arial;
+    bottom:-40px;
+    margin-left: -20px;
+    border-radius: 2px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+.notifications-Content:hover .notifications-tooltip{
+    opacity: 1;
+}
+
+
+/* side-bare.css */
+
+.Side-Bare{
+    background-color:white;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+    top: 50px; 
+    position: fixed;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    padding-top: 5px;
+
+    z-index: 200px;
+
+    
+    
+}
+
+.Side-Bare-icons{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+.SB{
+    width: 72px;
+    height: 74px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 10px;
+    text-align: center;
+
+}
+.SB :hover{
+    background-color: rgb(213, 211, 211);
+}
+.Home{
+
+    width: 26.9px;
+    height: 15;
+}
+.Explore{
+    width: 32.98px;
+    height: 15px;
+}
+.Subscription{
+    width: 60.94px;
+    height: 15px;
+}
+.Originals{
+    width: 39.98px;
+    height: 15px;
+}
+.You-Tube-Music{
+    width:68.38px;
+    height:15px;
+}
+.Library{
+    width: 30.25px;
+    height: 15px;
+}
+
+
+/* Video.css  */
+
+.Div-example{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 17px;
+   
+}
+.Div-example-2{
+    width: 300px;
+    display: inline-block;
+    margin-right: 17px;
+    vertical-align: top;
+}
+.Div-example-3{
+    width: 300px;
+    display: inline-block;
+    margin-right: 17px;
+    vertical-align: top;
+}
+.Div-example-4{
+    width: 300px;
+    display: inline-block;
+    margin-right: 17px;
+    vertical-align: top;
+}
+.thumbnail{
+    width: 100%;
+    /* width:300px ; */
+    /* height: 300px; */
+    /* object-fit: cover; */
+    /* object-fit: contain; */
+    /* object-position: left; */
+    /* object-position: right; */
+    /* border-width: 3px; */
+    border-radius: 2px;
+    border-color: black;
+    border: solid; 
+    /* display: block; */ 
+}
+.video-title{
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    width: 255px;
+
+    
+}
+.channel-picture{
+    /* display: inline-block;
+    width: 50px;
+    vertical-align: top; */
+}
+/* .video-info{
+    display: inline-block;
+    width: 200px;
+} */
+.channel{
+    width: 40px;
+    border-radius: 100%;
+   
+}
+.thumbnail-row {
+    margin-bottom: 10px;
+    position: relative;
+}
+.video-another{
+    font-style: italic;
+    color: rgb(29, 30, 30);
+    margin-bottom: 4px;
+
+    text-decoration: underline;
+}
+.channel-1-Info-Grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.All-Videos{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+    margin-top: 80px; 
+}
+
+@media (max-width:750px){
+    .All-Videos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width:1095px){
+    .All-Videos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.Youtube-INFO{
+    padding-left: 80px;
+    padding-top: 10px;
+    background-color: rgb(232, 230, 230);
+    
+}
+.Videos-times{
+    font-family: Roboto, Arial;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    
+    position: absolute;
+    right: 5px;
+    bottom: 9px;
+    
+}
 
